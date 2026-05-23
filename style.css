@@ -1,89 +1,96 @@
 *{
     margin: 0px;
 }
+
 @font-face {
     font-family: "Montserrat";
     src: url("./font/Montserrat-Regular.woff") format("woff");
     font-weight: 400;
     font-display: swap;
 }
+
 @font-face {
     font-family: "Montserrat";
     src: url("./font/Montserrat-Bold.woff") format("woff");
     font-weight: 700;
     font-display: swap;
 }
-.main_font{
+
+.main_fon {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     color: #515076;
 }
 
-
-.heading{
+.headin {
     font-size: 70px;
     text-align: center;
     font-weight: 400;
 }
 
-ul{
+u {
     padding-inline-start: 18px;
 }
 
-
-.cards{
+.card {
     list-style: none;
     padding: 0%;
 }
 
-.cards_card{
+.cards_car {
     width: 340px;
     height: 573px;
     background-color: #F7F7FA;
     padding: 25px;
     font-size: 13px;
 }
-.cards_card_img{
+
+.cards_card_im {
     margin-bottom: 30px;
 }
 
-.cards_card_for{
+.cards_card_fo {
     font-size: 12px;
     color: #A5A3B9;
     
 }
 
-.cards_card_title{
+.cards_card_titl {
     font-size: 20px;
     margin-top: 5px;
 
 }
-.cards_card_text{
+
+.cards_card_tex {
     margin-top: 5px;
 
 }
 
-.cards_card_list{
+.cards_card_lis {
     margin-top: 15px;
 }
-.cards_card_list_title{
+
+.cards_card_list_titl {
 }
-.cards_card_list_ul{
+
+.cards_card_list_u {
     list-style-type: circle;
 }
-.cards_card_list_li{
+
+.cards_card_list_l {
     margin-top: 5px;
 
 }
 
-
-.cards_card_price{
+.cards_card_pric {
     font-size: 20px;
     margin-top: 25px;
 
 }
-.cards_card_price_titlt{
+
+.cards_card_price_titl {
     margin-right: 150px;
 }
-.cards_card_price_total{
+
+.cards_card_price_tota {
     text-align: right;
 }
