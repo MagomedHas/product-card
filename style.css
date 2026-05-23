@@ -16,27 +16,27 @@
     font-display: swap;
 }
 
-.main_fon {
+.main_font {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     color: #515076;
 }
 
-.headin {
+.heading {
     font-size: 70px;
     text-align: center;
     font-weight: 400;
 }
 
-u {
+ul {
     padding-inline-start: 18px;
 }
 
-.card {
+.cards {
     list-style: none;
     padding: 0%;
 }
 
-.cards_car {
+.cards_card {
     width: 340px;
     height: 573px;
     background-color: #F7F7FA;
@@ -44,53 +44,54 @@ u {
     font-size: 13px;
 }
 
-.cards_card_im {
+.cards_card_img {
     margin-bottom: 30px;
 }
 
-.cards_card_fo {
+.cards_card_for {
     font-size: 12px;
     color: #A5A3B9;
     
 }
 
-.cards_card_titl {
+.cards_card_title {
     font-size: 20px;
     margin-top: 5px;
 
 }
 
-.cards_card_tex {
+.cards_card_text {
     margin-top: 5px;
 
 }
 
-.cards_card_lis {
+.cards_card_list {
     margin-top: 15px;
 }
 
-.cards_card_list_titl {
+.cards_card_list_title {
+    
 }
 
-.cards_card_list_u {
+.cards_card_list_ul {
     list-style-type: circle;
 }
 
-.cards_card_list_l {
+.cards_card_list_li {
     margin-top: 5px;
 
 }
 
-.cards_card_pric {
+.cards_card_price {
     font-size: 20px;
     margin-top: 25px;
 
 }
 
-.cards_card_price_titl {
+.cards_card_price_titlt {
     margin-right: 150px;
 }
 
-.cards_card_price_tota {
+.cards_card_price_total {
     text-align: right;
 }
