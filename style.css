@@ -94,13 +94,12 @@ ul {
 .cards_card_price {
     font-size: 20px;
     margin-top: 25px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .cards_card_price_titlt {
-    margin-right: 150px;
 }
 
 .cards_card_price_total {
-    text-align: right;
 }
