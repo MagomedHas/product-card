@@ -1,116 +1,116 @@
 * {
-    margin: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("./font/Montserrat-Regular.woff") format("woff");
-    font-weight: 400;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("./font/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("./font/Montserrat-Bold.woff") format("woff");
-    font-weight: 700;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("./font/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
 
 }
 
 .framework {
-    width: 1280px;
-    height: 1715px;
-    padding-top: 220px;
-    margin: 0 auto;
+  width: 1280px;
+  height: 1715px;
+  padding-top: 220px;
+  margin: 0 auto;
 
 }
 
 .background {
-    background-image: url("img/background_dandelion.png");
-    background-repeat: no-repeat;
-    background-position: 85px 0pt;
+  background-image: url("img/background_dandelion.png");
+  background-repeat: no-repeat;
+  background-position: 85px 0pt;
 }
 
 .main_font {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    color: #515076;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #515076;
 }
 
 .heading {
-    font-size: 70px;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 110px;
+  font-size: 70px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 110px;
 }
 
 ul {
-    padding-inline-start: 18px;
+  padding-inline-start: 18px;
 }
 
 .cards {
-    width: 1110px;
-    margin: 0 auto;
-    list-style: none;
-    padding: 0%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+  width: 1110px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 
 }
 
 .cards_card {
-    width: 340px;
-    height: 573px;
-    background-color: #F7F7FA;
-    padding: 25px;
-    font-size: 13px;
+  width: 340px;
+  height: 573px;
+  background-color: #F7F7FA;
+  padding: 25px;
+  font-size: 13px;
 }
 
 .cards_card_img {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .cards_card_for {
-    font-size: 12px;
-    color: #A5A3B9;
-    
+  font-size: 12px;
+  color: #A5A3B9;
+  
 }
 
 .cards_card_title {
-    font-size: 20px;
-    margin-top: 5px;
+  font-size: 20px;
+  margin-top: 5px;
 
 }
 
 .cards_card_text {
-    margin-top: 5px;
+  margin-top: 5px;
 
 }
 
 .cards_card_list {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .cards_card_list_title {
-    
+  
 }
 
 .cards_card_list_ul {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 
 .cards_card_list_li {
-    margin-top: 5px;
+  margin-top: 5px;
 
 }
 
 .cards_card_price {
-    font-size: 20px;
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
+  font-size: 20px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cards_card_price_titlt {
