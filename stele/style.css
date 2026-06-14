@@ -70,13 +70,17 @@
   margin-bottom: 15px;
 }
 
+
+.product-card__list-name {
+  margin-bottom: 5px;
+}
+
 .product-card__list {
-  margin-top: 5px;
   list-style-type: circle;
   margin-left: 15px;
-  li{
-    margin-top: 5px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .product-card__price {
