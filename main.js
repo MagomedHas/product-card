@@ -24,7 +24,7 @@ buttonRecolorProductAll.addEventListener('click', () => {
 
 buttonGoogle.addEventListener('click', openGoogle);
 heading.addEventListener('mouseover', () => {
-  console.log(heading.textContent, heading.classList.contains('headwwing'));
+  console.log(heading.textContent);
 });
 function openGoogle() {
   const answer = confirm('Вы действительно хотите открыть Google?');
