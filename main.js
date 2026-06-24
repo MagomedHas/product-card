@@ -2,6 +2,7 @@ const cardFirst = document.querySelector('.product-card');
 const cardAll = document.querySelectorAll('.product-card');
 const greenColorHash = '#00ff00';
 const blueColorHash = '#00f';
+const heading = document.querySelector('.heading');
 const buttonRecolorProduct = document.getElementById('button-recolor-product');
 const buttonRecolorProductAll = document.getElementById(
   'button-recolor-product-all'
@@ -18,7 +19,9 @@ buttonRecolorProductAll.addEventListener('click', () => {
   });
 });
 buttonGoogle.addEventListener('click', openGoogle);
-
+heading.addEventListener('mouseover', () => {
+  console.log(heading.textContent);
+});
 function openGoogle() {
   const answer = confirm('Вы действительно хотите открыть Google?');
   if (answer) {
