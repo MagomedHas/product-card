@@ -5,7 +5,7 @@ const blueColorHash = '#00f';
 const heading = document.querySelector('.heading');
 const invertBut = document.getElementById('button-inversion');
 const recolorProductBut = document.getElementById('button-recolor-product');
-const recolorProductButAll = document.getElementById(
+const recolorProductAllBut = document.getElementById(
   'button-recolor-product-all'
 );
 const openGoogleBut = document.getElementById('button-google');
@@ -18,7 +18,7 @@ invertBut.addEventListener('click', () => {
   invertBut.classList.toggle('button-inversion');
 });
 
-recolorProductButAll.addEventListener('click', () => {
+recolorProductAllBut.addEventListener('click', () => {
   allCards.forEach((card) => {
     card.style.backgroundColor = blueColorHash;
   });
