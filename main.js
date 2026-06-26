@@ -3,28 +3,28 @@ const allCards = document.querySelectorAll('.product-card');
 const greenColorHash = '#00ff00';
 const blueColorHash = '#00f';
 const heading = document.querySelector('.heading');
-const invertButton = document.getElementById('button-inversion');
-const buttonRecolorProduct = document.getElementById('button-recolor-product');
-const buttonRecolorProductAll = document.getElementById(
+const invertBut = document.getElementById('button-inversion');
+const recolorProductBut = document.getElementById('button-recolor-product');
+const recolorProductButAll = document.getElementById(
   'button-recolor-product-all'
 );
-const openGoogleBtn = document.getElementById('button-google');
+const openGoogleBut = document.getElementById('button-google');
 
-buttonRecolorProduct.addEventListener('click', () => {
+recolorProductBut.addEventListener('click', () => {
   firstCard.style.backgroundColor = greenColorHash;
 });
 
-invertButton.addEventListener('click', () => {
-  invertButton.classList.toggle('button-inversion');
+invertBut.addEventListener('click', () => {
+  invertBut.classList.toggle('button-inversion');
 });
 
-buttonRecolorProductAll.addEventListener('click', () => {
+recolorProductButAll.addEventListener('click', () => {
   allCards.forEach((card) => {
     card.style.backgroundColor = blueColorHash;
   });
 });
 
-openGoogleBtn.addEventListener('click', openGoogle);
+openGoogleBut.addEventListener('click', openGoogle);
 heading.addEventListener('mouseover', () => {
   console.log(heading.textContent);
 });
