@@ -24,3 +24,5 @@ function logProductPurchase(budget) {
     console.log(`Вам не хватает ${shortage}$, пополните баланс`);
   }
 }
+
+function addRatings(user, grade, message) {}
