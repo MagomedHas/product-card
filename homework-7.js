@@ -1,8 +1,8 @@
-function logCityTempC(city, tempC) {
+function showWeather(city, tempC) {
   console.log(`Сейчас в ${city} температура — ${tempC} градусов по Цельсию`);
 }
 
-function logCheckSpeedToLight(speed) {
+function compareSpeed(speed) {
   const SPEED_OF_LIGHT = 299_792_458;
   if (speed > SPEED_OF_LIGHT) {
     console.log('Сверхсветовая скорость');
@@ -14,9 +14,9 @@ function logCheckSpeedToLight(speed) {
 }
 
 const productName = 'Mars';
-const productPrice = 299_792_458; // ;)
+const productPrice = 299;
 
-function logProductPurchase(budget) {
+function productPurchase(budget) {
   if (budget >= productPrice) {
     console.log(`${productName} приобретён. Спасибо за покупку!`);
   } else {
