@@ -1,14 +1,12 @@
-function cityTemptratureOutputInCelsius(city, temptratureInCelsius) {
-  console.log(
-    `Сейчас в ${city} температура — ${temptratureInCelsius} градусов по Цельсию`
-  );
+function logCityTempC(city, tempC) {
+  console.log(`Сейчас в ${city} температура — ${tempC} градусов по Цельсию`);
 }
 
-function checkSpeedLight(speed) {
-  const SPEED_LIGHT = 299_792_458;
-  if (speed > SPEED_LIGHT) {
+function checkSpeedToLight(speed) {
+  const SPEED_OF_LIGHT = 299_792_458;
+  if (speed > SPEED_OF_LIGHT) {
     console.log('Сверхсветовая скорость');
-  } else if (speed < SPEED_LIGHT) {
+  } else if (speed < SPEED_OF_LIGHT) {
     console.log('Субсветовая скорость');
   } else {
     console.log('Скорость света');
