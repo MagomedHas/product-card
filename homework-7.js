@@ -16,7 +16,7 @@ function compareSpeed(speed) {
 const productName = 'Mars';
 const productPrice = 299;
 
-function productPurchase(budget) {
+function purchaseProduct(budget) {
   if (budget >= productPrice) {
     console.log(`${productName} приобретён. Спасибо за покупку!`);
   } else {
