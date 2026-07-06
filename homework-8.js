@@ -26,3 +26,7 @@ function addMaxSpeed(objCar) {
     objCar.maxSpeed = 250;
   }
 }
+
+function outValueObj(obi, key) {
+  return obi[key];
+}
