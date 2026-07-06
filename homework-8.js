@@ -27,7 +27,7 @@ function addMaxSpeed(objCar) {
   }
 }
 
-function outValueObj(obi, key) {
+function getValueObj(obi, key) {
   return obi[key];
 }
 
@@ -132,7 +132,7 @@ const animeList = [
 
 const movieList = [...animeList, ...fullLengthFilmList];
 
-function getIsRare(movies) {
+function addIsRare(movies) {
   movies.map((movie) => {
     movie.isRare = movie.releaseYear > 2000;
   });
