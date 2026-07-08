@@ -1,5 +1,6 @@
+import { comments } from './comments.js';
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-numbers = numbers.slice(4, 9);
+numbers = numbers.filter((number) => number >= 5);
 
 const furniture = [
   'Стол',
@@ -16,9 +17,25 @@ const furniture = [
 
 furniture.includes('Стол');
 
-function reverseMassif(massif) {
-  massif.reverse();
+function reversedArray(array) {
+  array.reverse();
 }
 
-reverseMassif(furniture);
-reverseMassif(numbers);
+reversedArray(numbers);
+reversedArray(furniture);
+
+console.log(comments.filter((comment) => comment.email.includes('.com')));
+const commentsWithPostId = comments.map((comment) => ({
+  ...comment,
+  postId: comment.id <= 5 ? 2 : 1,
+}));
+
+const commentsNamesAndIds = comments.map((comment) => ({
+  name: comment.name,
+  id: comment.id,
+}));
+
+const commentsWithInvalidFlag = comments.map((comment) => ({
+  ...comment,
+  isInvalid: comment.body.length > 180,
+}));
