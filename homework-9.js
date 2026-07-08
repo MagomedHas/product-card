@@ -1,5 +1,5 @@
 import { comments } from './comments.js';
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 numbers = numbers.filter((number) => number >= 5);
 
 const furniture = [
@@ -17,12 +17,12 @@ const furniture = [
 
 furniture.includes('Стол');
 
-function reversedArray(array) {
+function reverseArray(array) {
   array.reverse();
 }
 
-reversedArray(numbers);
-reversedArray(furniture);
+reverseArray(numbers);
+reverseArray(furniture);
 
 console.log(comments.filter((comment) => comment.email.includes('.com')));
 const commentsWithPostId = comments.map((comment) => ({
@@ -40,12 +40,12 @@ const commentsWithInvalidFlag = comments.map((comment) => ({
   isInvalid: comment.body.length > 180,
 }));
 
-const commentsMail1 = comments.reduce((result, comment) => {
+const commentsMailByReduce = comments.reduce((result, comment) => {
   result.push(comment.email);
   return result;
 });
 
-const commentsMail2 = comments.map((comment) => comment.email);
+const commentsMailByMap = comments.map((comment) => comment.email);
 
-console.log(commentsMail1.toString());
-console.log(commentsMail2.join('; s'));
+console.log(commentsMailByMap.toString());
+console.log(commentsMailByReduce.join('; s'));
