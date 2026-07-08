@@ -39,3 +39,13 @@ const commentsWithInvalidFlag = comments.map((comment) => ({
   ...comment,
   isInvalid: comment.body.length > 180,
 }));
+
+const commentsMail1 = comments.reduce((result, comment) => {
+  result.push(comment.email);
+  return result;
+});
+
+const commentsMail2 = comments.map((comment) => comment.email);
+
+console.log(commentsMail1.toString());
+console.log(commentsMail2.join('; s'));
