@@ -7,7 +7,6 @@ const productsTitleAndText = products.reduce((acc, product) => {
   acc.push(item);
   return acc;
 }, []);
-console.log(productsTitleAndText, '!1111!!!!');
 function setProductCard(productCard) {
   const productCardClont = templateProductCard.content.cloneNode(true);
   productCardClont.querySelector('img').setAttribute('src', productCard.img);
@@ -33,4 +32,25 @@ function setProductCard(productCard) {
   productList.appendChild(productCardClont);
 }
 
-setProductCard(products[0]);
+function setProductCardList(productCardList) {
+  for (const product of productCardList) {
+    setProductCard(product);
+  }
+}
+setProductCardList(products)
+console.log(requestQuantityProduct(), "1111111111111111111111111")
+function requestQuantityProduct() {
+  while (true){
+    let input = prompt('Сколько карточек отобразить? От 1 до 5', '5');
+    if (input === null) {
+      return 0
+    }
+
+    const quantity = Number(input);
+
+    if (Number.isInteger(quantity) && quantity >= 1 && quantity <= 5) {
+      return quantity;
+    }
+    alert('Пожалуйста, введите целое число от 1 до 5.');
+  }
+}
