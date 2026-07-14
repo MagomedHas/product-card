@@ -43,7 +43,7 @@ const commentsWithInvalidFlag = comments.map((comment) => ({
 const commentsMailByReduce = comments.reduce((result, comment) => {
   result.push(comment.email);
   return result;
-});
+}, []);
 
 const commentsMailByMap = comments.map((comment) => comment.email);
 
