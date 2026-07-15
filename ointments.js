@@ -1,6 +1,6 @@
-export const products = [
+export const ointments = [
   {
-    img: 'img/moisturizing_mousse.png',
+    img: 'moisturizing_mousse',
     for: 'для нормальной кожи',
     title: 'Увлажняющий мусс',
     text: 'Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.',
@@ -12,7 +12,7 @@ export const products = [
     price: 2_750,
   },
   {
-    img: 'img/moisturizing_mask.png',
+    img: 'moisturizing_mask',
     for: 'для нормальной кожи',
     title: 'Увлажняющая маска',
     text: 'Способствует удерживанию влаги в верхних слоях кожи.',
@@ -20,7 +20,7 @@ export const products = [
     price: 3_500,
   },
   {
-    img: 'img/face_wash.png',
+    img: 'face_wash',
     for: 'для нормальной кожи',
     title: 'Гель для умывания',
     text: 'Интенсивно очищает, не повреждает защитный барьер кожи.',
@@ -32,7 +32,7 @@ export const products = [
     price: 1_650,
   },
   {
-    img: 'img/gift_set_no_1.png',
+    img: 'gift_set_no_1',
     for: 'для нормальной кожи',
     title: 'Подарочный набор №1',
     text: 'Набор, состоящий из увлажняющего крема и маски.',
@@ -40,7 +40,7 @@ export const products = [
     price: 4_750,
   },
   {
-    img: 'img/gift_set_no_5.png',
+    img: 'gift_set_no_5',
     for: 'для нормальной кожи',
     title: 'Подарочный набор №5',
     text: 'Весь набор средств Invisible symphony, крем, маска, мусс и гель',
