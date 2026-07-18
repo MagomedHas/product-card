@@ -49,17 +49,17 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  padding: 0px 20px 0px;
+  padding: 0 20px 0;
 }
 
-.products-list {
+.product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
 }
 
-.products-list__item {
+.product-list__item {
   width: 340px;
   height: 573px;
 }
@@ -78,7 +78,7 @@ button {
   margin-bottom: 30px;
 }
 
-.product-card__for {
+.product-card__product-for {
   font-size: 12px;
   color: #a5a3b9;
   margin-bottom: 5px;
@@ -98,7 +98,7 @@ button {
   margin-bottom: 5px;
 }
 
-.product-card__list {
+.product-card__compound-list {
   list-style-type: circle;
   margin-left: 15px;
   display: flex;
@@ -106,7 +106,7 @@ button {
   gap: 5px;
 }
 
-.product-card__price {
+.product-card__footer {
   font-size: 20px;
   margin-top: auto;
   display: flex;
