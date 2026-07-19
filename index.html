@@ -13,16 +13,64 @@
       <div class="container catalog__container">
         <h1 class="catalog__title heading">Выбери свой продукт</h1>
         <div class="catalog__button-panel button-panel">
-          <button id="button-recolor-product">перекрасить карточку</button>
-          <button id="button-recolor-product-all">
+          <button id="button-recolor-product " class="button-text">
+            перекрасить карточку
+          </button>
+          <button id="button-recolor-product-all" class="button-text">
             перекрасить все карточки
           </button>
-          <button id="button-google">google.com</button>
-          <button id="button-inversion">кнопка меняет цвет</button>
+          <button id="button-google" class="button-text">google.com</button>
+          <button id="button-inversion" class="button-text">
+            кнопка меняет цвет
+          </button>
         </div>
         <ul id="product-list" class="catalog__product-blog product-list"></ul>
       </div>
     </main>
+    <footer class="footer catalog--font">
+      <div class="footer__container footer__content">
+        <div class="footer__info">
+          <h2 class="footer__title">Product Cards</h2>
+          <p class="footer__text">У нас самые лучшие продукты для кожи!</p>
+          <nav class="footer__contacts_links">
+            <a><img src="icons/telegram.svg" alt="telegram" /></a>
+            <a><img src="icons/VK.svg" alt="VK" /></a>
+          </nav>
+        </div>
+        <div class="footer__subscribe subscribe">
+          <h3 class="subscribe__title">Подпишись на наши акции:</h3>
+          <form class="subscribe__body">
+            <input
+              class="subscribe__input"
+              type="email"
+              placeholder="Введи Email..."
+              name="Email"
+            />
+
+            <hr class="subscribe__line" />
+            <button class="subscribe__button" type="submit">Подписаться</button>
+          </form>
+        </div>
+
+        <div class="footer__links">
+          <div class="links">
+            <span class="links__title">Быстрые ссылки</span>
+            <nav class="links__list">
+              <a>Главная</a>
+              <a>Магазин</a>
+              <a>Конетакты</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__line" />
+
+      <!-- Нижняя часть с копирайтом -->
+      <small class="footer__small"
+        >www.product-cards.com © all rights reserved</small
+      >
+    </footer>
     <template id="template_product-card">
       <li class="product-list__item product-card">
         <img class="product-card__img" src="" alt="" />
