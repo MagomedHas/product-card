@@ -43,7 +43,7 @@ registrationForm.addEventListener('submit', (e) => {
     console.log(user);
 
     registrationModal.classList.remove('modal-showed')
-  }else {
+  } else {
     alert("Регистрация отклонена!");
   }
 })
