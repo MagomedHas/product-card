@@ -2,7 +2,7 @@ const subscribeForm = document.getElementById('subscribe-form');
 subscribeForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const form = e.target;
-  const data = formToObject(form);
+  const data =  getFormValues(form);
     console.log(data)
 })
 
@@ -15,7 +15,7 @@ registrationModal.addEventListener('click', e => {
 openRegistrationBtn.addEventListener('click', (e) => {
     registrationModal.classList.add('modal-showed')})
 
-function formToObject(form) {
+function getFormValues(form) {
   const formDate = new FormData(form);
   return  Object.fromEntries(formDate);
 }
@@ -31,7 +31,7 @@ registrationForm.addEventListener('submit', (e) => {
   e.preventDefault()
   console.log('registration submitted')
   const form = e.target;
-  const data = formToObject(form);
+  const data = getFormValues(form);
   if (registrationForm.checkValidity()) {
     if (data.password !== data.passwordConfirmation) {
       alert("Пароли не совпадают");
