@@ -1,10 +1,9 @@
 const subscribeForm = document.getElementById('subscribe-form');
 subscribeForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const from =e.target;
-    const formDate = new FormData(from);
-    const date = Object.fromEntries(formDate);
-    console.log(date)
+    const form = e.target;
+  const data = formToObject(form);
+    console.log(data)
 })
 
 const openRegistrationBtn = document.getElementById('button-open-registration');
@@ -16,6 +15,11 @@ registrationModal.addEventListener('click', e => {
 openRegistrationBtn.addEventListener('click', (e) => {
     registrationModal.classList.add('modal-showed')})
 
+function formToObject(form) {
+  const formDate = new FormData(form);
+  return  Object.fromEntries(formDate);
+}
+
 const registrationForm = document.getElementById('registration-form');
 const closeBtm = document.getElementsByClassName('close-button')[0];
 closeBtm.addEventListener('click', e => {
@@ -26,9 +30,8 @@ closeBtm.addEventListener('click', e => {
 registrationForm.addEventListener('submit', (e) => {
   e.preventDefault()
   console.log('registration submitted')
-  const form = e.target; 
-  const formDate = new FormData(form);
-  const data = Object.fromEntries(formDate);
+  const form = e.target;
+  const data = formToObject(form);
   if (registrationForm.checkValidity()) {
     if (data.password !== data.passwordConfirmation) {
       alert("Пароли не совпадают");
@@ -44,3 +47,4 @@ registrationForm.addEventListener('submit', (e) => {
     alert("Регистрация отклонена!");
   }
 })
+
