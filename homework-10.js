@@ -55,7 +55,7 @@ function requestQuantityProduct() {
   }
 }
 
-const quantity = requestQuantityProduct();
-
-ointments.length = quantity;
+// const quantity = requestQuantityProduct();
+//
+// ointments.length = quantity;
 setProductCardList(ointments);

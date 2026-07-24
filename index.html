@@ -13,16 +13,137 @@
       <div class="container catalog__container">
         <h1 class="catalog__title heading">Выбери свой продукт</h1>
         <div class="catalog__button-panel button-panel">
-          <button id="button-recolor-product">перекрасить карточку</button>
-          <button id="button-recolor-product-all">
+          <button id="button-recolor-product " class="button-text">
+            перекрасить карточку
+          </button>
+          <button id="button-open-registration" class="button-text">
+            Регистрация
+          </button>
+          <button id="button-recolor-product-all" class="button-text">
             перекрасить все карточки
           </button>
-          <button id="button-google">google.com</button>
-          <button id="button-inversion">кнопка меняет цвет</button>
+          <button id="button-google" class="button-text">google.com</button>
+          <button id="button-inversion" class="button-text">
+            кнопка меняет цвет
+          </button>
         </div>
         <ul id="product-list" class="catalog__product-blog product-list"></ul>
       </div>
     </main>
+    <footer class="footer catalog--font">
+      <div class="footer__container footer__content">
+        <div class="footer__info">
+          <h2 class="footer__title">Product Cards</h2>
+          <p class="footer__text">У нас самые лучшие продукты для кожи!</p>
+          <nav class="footer__contacts_links">
+            <a><img src="icons/telegram.svg" alt="telegram" /></a>
+            <a><img src="icons/VK.svg" alt="VK" /></a>
+          </nav>
+        </div>  
+        <div class="footer__subscribe subscribe">
+          <h3 class="subscribe__title">Подпишись на наши акции:</h3>
+          <form class="subscribe__body" id="subscribe-form">
+            <input
+              class="input_main"
+              type="email"
+              placeholder="Введи Email..."
+              name="email"
+              required
+            />
+
+            <hr class="subscribe__line" />
+            <button class="subscribe__button" type="submit">Подписаться</button>
+          </form>
+        </div>
+
+        <div class="footer__links">
+          <div class="links">
+            <span class="links__title">Быстрые ссылки</span>
+            <nav class="links__list">
+              <a>Главная</a>
+              <a>Магазин</a>
+              <a>Конетакты</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__line" />
+
+      <small class="footer__small">
+        www.product-cards.com © all rights reserved</small>
+    </footer>
+    <div class="modal overlay" id="modal-registration">
+      <div class="modal-content">
+        <div class="position-close-button">
+          <button class="close-button">☒</button>
+        </div>
+        <h2>Регистрация:</h2>
+        <form class="modal-form" id="registration-form">
+          <label for="first-name">Имя:</label>
+          <input
+            class="input_main"
+            type="text"
+            placeholder="Введи Имя..."
+            name="firstName"
+            id="first-name"
+            required
+          />
+          <hr>
+          <label for="last-name">Фамилия:</label>
+          <input
+            class="input_main"
+            type="text"
+            placeholder="Введи Фамилию..."
+            name="lastName"
+            id="last-name"
+            required
+          />
+          <hr>
+          <label for="date-of-birth">Дать рожденич:</label>
+          <input
+            class="input_main"
+            type="date"
+            placeholder="Введи дату рождения..."
+            name="dateOfBirth"
+            id="date-of-birth"
+            required
+          />
+          <hr>
+          <label for="username">Логин:</label>
+          <input
+            class="input_main"
+            type="text"
+            placeholder="Введи логин..."
+            name="username"
+            id="username"
+            required
+          />
+          <hr>
+          <label for="password">Пароль:</label>
+          <input
+            class="input_main"
+            type="password"
+            placeholder="Введи пароль..."
+            name="password"
+            id="password"
+            required
+          />
+          <hr>
+          <label for="password-сonfirmation">Повторите пароль</label>
+          <input 
+            class="input_main"
+            type="password"
+            placeholder="Повторите пароль..."
+            name="passwordConfirmation"
+            id="password-сonfirmation"
+            required
+          />
+          <hr>
+          <button type="submit" class="button-text" id="registration-button">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
     <template id="template_product-card">
       <li class="product-list__item product-card">
         <img class="product-card__img" src="" alt="" />
@@ -43,5 +164,6 @@
     <script src="homework-8.js"></script>
     <script src="homework-9.js" type="module"></script>
     <script src="homework-10.js" type="module"></script>
+    <script src="homework-11.js" type="module"></script>
   </body>
 </html>
