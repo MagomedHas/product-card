@@ -1,5 +1,3 @@
-
-
 class TV {
 	constructor(brand, model){
 		this.maxChannel = 99;

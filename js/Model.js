@@ -1,9 +1,9 @@
-export class Model {
+export default class Model {
   #model;
   constructor(idModel) {
     this.#model = document.getElementById(idModel);
     if (!this.#model) {
-      throw new Error("No model found.");
+      throw new Error(`Model with id ${idModel}`);
     }
 
     const closeBtn = this.#model.querySelector(".close-button");
@@ -21,7 +21,7 @@ export class Model {
     this.#model.classList.remove('modal-showed');
   }
 
-  isOpen(){
+  isOpen() {
     return this.#model.classList.contains('modal-showed');
   }
 
@@ -34,7 +34,7 @@ export class Model {
   }
 
   addListenerOpen(element) {
-    element.addEventListener('click', (e) => {
+    element.addEventListener('click', () => {
       this.open();
     })
   }
