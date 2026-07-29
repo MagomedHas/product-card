@@ -2,6 +2,7 @@ export default class Form {
   #form;
   static #EXPECTED_PASSWORD_COUNT = 2;
   #passwordFields;
+
   constructor(idForm) {
     this.#form = document.getElementById(idForm);
     if (!this.#form) {
@@ -18,7 +19,7 @@ export default class Form {
     })
   }
 
-  arePasswordsMatching () {
+  arePasswordsMatching() {
     return this.#passwordFields[0].value === this.#passwordFields[1].value;
   }
 
