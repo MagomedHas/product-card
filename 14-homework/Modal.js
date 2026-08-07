@@ -4,12 +4,11 @@ export class Modal {
     this.modal = document.getElementById(modalId);
     this.overlay = document.getElementById('overlay');
     this.#initOpen(buttonId);
-    this.#initClose();
+    this.#initClose()
     this.#shouldCloseOnOverlay = shouldCloseOnOverlay
   }
 
   open() {
-    if(this.isOpen()) return;
     this.modal.classList.add('modal-showed');
     this.overlay.classList.add('overlay-showed');
     this.#onOverlayClick()
@@ -44,6 +43,5 @@ export class Modal {
     closeButton.addEventListener('click', () => {
       this.close();
     })
-    this.#onOverlayClick()
   }
 }
