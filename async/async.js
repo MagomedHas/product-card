@@ -63,7 +63,7 @@ class UserManager {
   }
 
   loading() {
-    for (let user of this.repository) {
+    for (let user of this.repository.getUsers()) {
       this.setUser(user);
     }
   }
@@ -77,7 +77,6 @@ class UserManager {
 
   removeAllUsers() {
     for (let key of Object.keys(this.#users)) {
-
       this.removeUser(key);
     }
   }
@@ -97,7 +96,7 @@ class UserManager {
         }, 2000);
       })
       const data = await response.json();
-      return this.repository.getUsers(data);
+      return this.repository.setUsers(data);
     } catch (error) {
       console.log('Ошибка:', error);
     } finally {
@@ -110,17 +109,25 @@ class UserManager {
 
 
 class LocalStorageService {
-  setUser(user) {
-    localStorage.setItem(user.id, JSON.stringify(user));
-  }
-
   getUser(userId) {
     const user = localStorage.getItem(userId);
     if (user) return JSON.parse(user);
     return null;
   }
 
-  getUsers(users) {
+  getUsers() {
+    let user = [];
+    for (let key of Object.keys(localStorage)) {
+      user.push(this.getUser(key))
+    }
+    return user;
+  }
+
+  setUser(user) {
+    localStorage.setItem(user.id, JSON.stringify(user));
+  }
+
+  setUsers(users) {
     let savedCount = 0;
     for (let user of users) {
       if (!localStorage.getItem(user.id)) {
@@ -133,12 +140,6 @@ class LocalStorageService {
 
   removeUser(userId) {
     localStorage.removeItem(userId);
-  }
-
-  *[Symbol.iterator]() {
-    for (let key of Object.keys(localStorage)) {
-      yield this.getUser(key)
-    }
   }
 }
 
