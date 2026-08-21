@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>async</title>
+  <link rel="stylesheet" href="../style/custom-reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main container">
+    <h1 class="title">Пользователи</h1>
+    <div id="loading" class="loading "> Данные загружаются....</div>
+    <div class="button-block">
+      <button class="button green-button" id="set-button">получить</button>
+      <button class="button red-button" id="delete-button">удалеть все </button>
+    </div>
+    <ol class="users" id="users"></ol>
+  </main>
+  <template id="users-item">
+    <li class="users-item">
+      <ol class="users-item__data"></ol>
+      <button class="users-item__delete-button button delete-button">удалеть</button>
+    </li>
+  </template>
+  <script src="./async.js" type="module"></script>
+</body>
+</html>
